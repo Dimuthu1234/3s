@@ -271,12 +271,14 @@
 
             </li>
 
+
+
             <li class="dropdown divided user" id="current-user">
                 <div class="profile-photo">
                     <img src="assets/images/profile-photo.jpg" alt/>
                 </div>
                 <a class="dropdown-toggle options" data-toggle="dropdown" href="#">
-                    John Douey <i class="fa fa-caret-down"></i>
+                    {{ Auth::user()->name }} <i class="fa fa-caret-down"></i>
                 </a>
 
                 <ul class="dropdown-menu arrow settings">
@@ -355,13 +357,11 @@
                     </li>
 
                     <li class="divider"></li>
-
                     <li>
-                        <form action="{{ route('logout') }}" method="POST">
-                            @csrf
-                            <button class="logout"><i class="fa fa-power-off"></i> Logout</button>
-                        </form>
+                        <a href="{{ url('/logout') }}"><i class="fa fa-power-off"></i> LOGOUT</a>
                     </li>
+
+                
                 </ul>
             </li>
 
