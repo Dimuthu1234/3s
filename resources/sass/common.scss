@@ -1,0 +1,39 @@
+.module-list{
+    background: #0000004a;
+    padding: 4%;
+    border-bottom: 2px solid #b31717;
+    border-radius: 5%;
+
+    &:hover{
+        background: black;
+        padding: 4%;
+        border-bottom: 2px solid #b31717;
+        border-radius: 5%;
+    }
+    a{
+        font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+        width: 100%;
+    }
+}
+
+.add-btn{
+    border: 1px solid #fff;
+    margin-top: 5px;
+    padding: 6px;
+    border-radius: 15px;
+
+    &:hover{
+        background: #977d85;
+    }
+    a{
+        color: #fff;
+    }
+}
+
+.logout{
+    background: white;
+    border: 0;
+    outline: none;
+}
